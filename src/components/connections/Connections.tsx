@@ -6,12 +6,12 @@ export const Connections = component$(() => {
 
     return (
         <div>
-            {globalState.map((stop, i) => (
+            {globalState.connections.map((connection, i) => (
                 <button
                     class="bg-slate-100 p-4 border-t-2 w-full hover:border-4 hover:p-3 h-24 rounded-sm"
-                    onClick$={() => selectStop(stop)}
+                    onClick$={() => globalState.chosenConnection(connection)}
                 >
-                    <StopItem stop={stop} />
+                    <ConnectionItem connection={connection} />
                 </button>
             ))}
         </div>

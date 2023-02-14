@@ -8,7 +8,7 @@ export const TripPlanner = component$(() => {
     return (
         <div class="grid grid-cols-5 p-2 min-h-screen">
             {globalState.stops.map((stop, stopSlot) => (
-                <div class="col-span-2">
+                <div class="grid col-span-2 gap-2">
                     <StopSelector selectedStop={stop} stopSlot={stopSlot} />
                 </div>
             ))}

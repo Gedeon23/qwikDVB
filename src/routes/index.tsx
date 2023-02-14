@@ -15,6 +15,7 @@ export default component$(() => {
     const state = useStore({
         stops: [{}, {}],
         connections: [],
+        chosenConnection: {},
     });
 
     useTask$(async ({ track }) => {
