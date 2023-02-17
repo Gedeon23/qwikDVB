@@ -8,6 +8,7 @@ import {
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { TripPlanner } from "~/components/tripPlanner/tripPlanner";
 import * as dvb from "dvbjs";
+import { Connections } from "~/components/connections/Connections";
 
 export const AppState = createContext("app-state");
 
@@ -37,6 +38,7 @@ export default component$(() => {
     return (
         <div>
             <TripPlanner />
+            <Connections />
         </div>
     );
 });
